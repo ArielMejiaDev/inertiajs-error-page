@@ -1,0 +1,55 @@
+{
+    "name": "arielmejiadev/inertiajs-error-page",
+    "description": "It adds a Vue component to load error page with the beautiful Illustrations used on Laravel 5.7 with TailwindCSS.",
+    "keywords": [
+        "laravel",
+        "inertiaJS",
+        "arielmejiadev",
+        "inertiajs-error-page"
+    ],
+    "homepage": "https://github.com/arielmejiadev/inertiajs-error-page",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ariel Mejia Dev",
+            "email": "arielmejiadev@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.0|^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArielMejiaDev\\InertiajsErrorPage\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ArielMejiaDev\\InertiajsErrorPage\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ArielMejiaDev\\InertiajsErrorPage\\InertiajsErrorPageServiceProvider"
+            ],
+            "aliases": {
+                "InertiajsErrorPage": "ArielMejiaDev\\InertiajsErrorPage\\InertiajsErrorPageFacade"
+            }
+        }
+    }
+}
