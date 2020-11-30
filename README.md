@@ -75,6 +75,7 @@ If you discover any security related issues, please email arielmejiadev@gmail.co
 ## Credits
 
 - [Ariel Mejia Dev](https://github.com/arielmejiadev)
+- [Steve Schoger](https://github.com/sschoger)
 
 ## License
 
