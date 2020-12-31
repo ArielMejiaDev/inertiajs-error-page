@@ -36,6 +36,10 @@ public function render($request, Throwable $exception)
             'message' => $exception->getMessage(),
             'home' => config('app.url'),
         ])->toResponse($request)->setStatusCode($response->status());
+    } else if ($response->status() === 419) {
+        return back()->with([
+            'message' => 'The page expired, please try again.',
+        ]);
     }
 
     return $response;
