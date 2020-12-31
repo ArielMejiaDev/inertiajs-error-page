@@ -47,7 +47,7 @@ public function render($request, Throwable $exception)
 
 public function thereAreErrorsInProduction($response)
 {
-    return \Illuminate\Support\Facades\App::environment('production') && in_array($response->status(), [500, 503, 404, 403, 401, 419, 429]);
+    return \Illuminate\Support\Facades\App::environment('production') && in_array($response->status(), [500, 503, 404, 403, 401, 429]);
 }
 ```
 
